@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Task Manager</h1>
+        <p id="task-count">0 tasks remaining</p>
+
+        <div class="input-row">
+            <input 
+                type="text"
+                id="task-input"
+                placeholder="Enter a task..."
+            >
+
+            <select id="category-input">
+                <option value="home">Home</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+                <option value="personal">Personal</option>
+
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="task-list">
+            <!-- Tasks will appear here -->
+        </ul>
+    </div>
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
